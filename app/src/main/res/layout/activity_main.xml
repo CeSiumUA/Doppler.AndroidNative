@@ -7,13 +7,63 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/authButton"
         android:layout_width="252dp"
         android:layout_height="44dp"
-        android:text="Button"
+        android:text="Войти"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.69" />
+
+    <EditText
+        android:id="@+id/passwordBox"
+        android:layout_width="252dp"
+        android:layout_height="44dp"
+        android:ems="10"
+        android:hint="Пароль"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/authButton"
+        app:layout_constraintEnd_toEndOf="@+id/authButton"
+        app:layout_constraintStart_toStartOf="@+id/authButton"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/loginBox"
+        android:layout_width="252dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:hint="Имя аккаунта"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/passwordBox"
+        app:layout_constraintEnd_toEndOf="@+id/passwordBox"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/passwordBox"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.961"
+        android:autofillHints="" />
+
+    <TextView
+        android:id="@+id/authResultColor"
+        android:layout_width="252dp"
+        android:layout_height="15dp"
+        android:background="#2841BD"
+        app:layout_constraintBottom_toTopOf="@+id/passwordBox"
+        app:layout_constraintEnd_toEndOf="@+id/loginBox"
+        app:layout_constraintStart_toStartOf="@+id/loginBox"
+        app:layout_constraintTop_toBottomOf="@+id/loginBox"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/loginBox"
+        app:layout_constraintEnd_toEndOf="@+id/loginBox"
+        app:layout_constraintStart_toStartOf="@+id/loginBox"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/radaricon"
+        android:contentDescription="TODO" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
